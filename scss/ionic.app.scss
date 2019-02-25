@@ -1,23 +1,87 @@
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
-
-For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
-
-// The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.width {
+	display: inline}
+.width50 {
+	width: 50%;
+}
 
-// Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+.center {
+	text-align: center}
+.green {
+	color: green;
+}
+
+//date & time
+.reserve h3 {
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	line-height: 60px;
+}
+
+.reserve span {
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.people {
+	margin: 30px auto 30px auto;
+	width: 140px;
+}
+
+.people span {
+	line-height: 50px;
+	font-size: 40px;
+	width: 60px;
+}
+
+.date {
+	margin: 30px auto 30px auto;
+	width: 220px;
+	position: relative;
+}
+
+.date .button-left,
+.date .button-right {
+	position: absolute;
+	top: 78px;
+}
+
+.date .button-left {
+	left: 0px;
+}
+
+.date .button-right {
+	right: 0px;
+}
+
+.date span {
+	display: block;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.date span.month {
+	font-size: 17px;
+}
+
+.time {
+	margin: 30px auto 30px auto;
+	width: 160px;
+	position: relative;
+}
+
+.time span {
+	letter-spacing: 3px;
+	line-height: 45px;
+	font-size: 25px;
+	width: 85px;
+}
+
+//confirmed dates (list with delete buttons)
+.body {
+	cursor: url('https: //ionicframework.com/img/finger.png'), auto;
+}
 

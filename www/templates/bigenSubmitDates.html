@@ -1,0 +1,35 @@
+<ion-view title="Bigen submit dates" hide-nav-bar="true" id="page8">
+  <ion-content padding="true" class="manual-ios-statusbar-padding">
+    <div id="bigenSubmitDates-container12">
+      <h3 id="bigenSubmitDates-heading12" style="color:#000000;text-align:center;">Date</h3>
+      <div id="bigenSubmitDates-container10" class="center">
+        <h4 id="bigenSubmitDates-heading16" ng-model="today" style="color:#000000;text-align:center;" class="width">{{data.today}}</h4>
+        <div id="bigenSubmitDates-container9" class="center">
+          <button id="bigenSubmitDates-button35" ng-click="decdate()" style="font-weight:600;font-size:25px;" class="button button-positive button-large button-clear width">&lt;</button>
+          <h4 id="bigenSubmitDates-heading21" ng-model="month" style="color:#000000;text-align:justify;" class="width center">{{data.month}}</h4>
+          <button id="bigenSubmitDates-button36" ng-click="incdate()" style="font-weight:600;font-size:25px;" class="button button-positive button-large button-clear width">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div id="bigenSubmitDates-container21">
+      <h3 id="bigenSubmitDates-heading22" style="color:#000000;text-align:center;">Time</h3>
+      <div id="bigenSubmitDates-container20" class="center">
+        <div id="bigenSubmitDates-container13" class="center">
+          <button id="bigenSubmitDates-button37" ng-click="dectime()" style="font-weight:600;font-size:25px;" class="button button-positive button-clear width">&lt;</button>
+          <h4 id="bigenSubmitDates-heading23" ng-model="time" style="color:#000000;text-align:center;" class="width">{{data.time}}</h4>
+          <button id="bigenSubmitDates-button38" ng-click="inctime()" style="font-weight:600;font-size:25px;" class="button button-positive button-clear width">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <h3 id="bigenSubmitDates-heading29" style="color:#000000;text-align:center;">How many Seats are Available?</h3>
+    <form id="bigenSubmitDates-form9" class="list">
+      <label class="item item-input" id="bigenSubmitDates-input8">
+        <input type="number" placeholder="Enter amount of seats" ng-model="data.reserveSpot">
+      </label>
+    </form>
+    <a ui-sref="bigenDateConfirmation({&quot;reserveSpot&quot;:&quot;&quot;+data.reserveSpot+&quot;&quot;,&quot;time&quot;:&quot;&quot;+data.time+&quot;&quot;,&quot;month&quot;:&quot;&quot;+data.month+&quot;&quot;,&quot;today&quot;:&quot;&quot;+data.today+&quot;&quot;})"
+      id="bigenSubmitDates-button39" class="button button-balanced button-block">Submit</a>
+    <a ui-sref="page10({&quot;reserveSpot&quot;:&quot;&quot;,&quot;time&quot;:&quot;&quot;,&quot;month&quot;:&quot;&quot;,&quot;today&quot;:&quot;&quot;})" id="bigenSubmitDates-button44" class="button button-positive button-block">Confirmed Dates</a>
+    <a ui-sref="welcome()" id="bigenSubmitDates-button40" class="button button-dark button-block">back</a>
+  </ion-content>
+</ion-view>

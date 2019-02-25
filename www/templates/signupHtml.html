@@ -1,0 +1,38 @@
+<ion-view title="Signup" hide-nav-bar="true">
+  <form id="signup-form12" class="list center-form">
+    <div>
+      <center>
+        <img src="img/ghMiN3MpSWebqbClVQ75_bigen_brandmark_transp.jpg.png" style="display: block; width: 80%;">
+      </center>
+    </div>
+    <div id="signup-button-bar4" class="button-bar">
+
+    </div>
+    <ion-list id="signup-list4" ng-show="activeSection==1">
+      <label class="item item-input top-input" id="signup-input3">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="" ng-model="data.email">
+      </label>
+      <label class="item item-input bottom-input" id="signup-input4">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="" ng-model="data.password">
+      </label>
+    </ion-list>
+    <ion-list id="signup-list5" ng-show="activeSection==2">
+      <label class="item item-input top-input" id="signup-input6">
+        <span class="input-label">Restaurant Email</span>
+        <input type="text" placeholder="" ng-model="data.email">
+      </label>
+      <label class="item item-input bottom-input" id="signup-input7">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="" ng-model="data.password">
+      </label>
+    </ion-list>
+    <div id="signup-markdown5" class="show-list-numbers-and-dots error-box">
+      <p style="margin-top:0px;color:#000000;">{{errorBox}}</p>
+    </div>
+    <button id="signup-button25" ng-click="signup()" class="button button-assertive  button-block button-dark">Signup</button>
+    <!--<a ui-sref="login" id="signup-button26" class="button button-positive  button-block">Already have an account</a>-->
+    <a ui-sref="loginHtml()" class="button button-positive button-block">Already have an account</a>
+  </form>
+</ion-view>

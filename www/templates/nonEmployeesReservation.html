@@ -1,0 +1,35 @@
+<ion-view title="non employees reservation" id="page11">
+  <ion-content padding="true" class="has-header">
+    <div id="nonEmployeesReservation-container16">
+      <h2 id="nonEmployeesReservation-heading18" style="color:#000000;text-align:center;">Space Available for</h2>
+      <h1 id="nonEmployeesReservation-heading14" style="color:#000000;text-align:center;">Date</h1>
+      <div id="nonEmployeesReservation-container14" class="center">
+        <h4 id="nonEmployeesReservation-heading11" style="color:#000000;text-align:center;" class="width">{{today}}</h4>
+        <div id="nonEmployeesReservation-container15" class="center">
+          <button id="nonEmployeesReservation-button19" ng-click="decdate()" style="font-weight:600;font-size:25px;" class="button button-positive button-large button-clear width">&lt;</button>
+          <h4 id="nonEmployeesReservation-heading13" style="color:#000000;text-align:justify;" class="width center">{{month}}</h4>
+          <button id="nonEmployeesReservation-button20" ng-click="incdate()" style="font-weight:600;font-size:25px;" class="button button-positive button-large button-clear width">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div id="nonEmployeesReservation-container19">
+      <h1 id="nonEmployeesReservation-heading15" style="color:#000000;text-align:center;">Time</h1>
+      <div id="nonEmployeesReservation-container18" class="center">
+        <div id="nonEmployeesReservation-container17" class="center">
+          <button id="nonEmployeesReservation-button21" ng-click="dectime()" style="font-weight:600;font-size:25px;" class="button button-positive button-clear width">&lt;</button>
+          <h4 id="nonEmployeesReservation-heading17" style="color:#000000;text-align:center;" class="width">{{time}}</h4>
+          <button id="nonEmployeesReservation-button22" ng-click="inctime()" style="font-weight:600;font-size:25px;" class="button button-positive button-clear width">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <h2 id="nonEmployeesReservation-heading19" style="color:#FF0000;text-align:center;" class="center">{{data.avail}}</h2>
+    <h3 id="nonEmployeesReservation-heading20" style="color:#000000;text-align:center;">Make Reservation for </h3>
+    <form id="nonEmployeesReservation-form7" class="list">
+      <label class="item item-input" id="nonEmployeesReservation-input6">
+        <input type="number" placeholder="Enter amount of people" ng-model="data.reserveSpot">
+      </label>
+    </form>
+    <button id="nonEmployeesReservation-button23" ng-click="check()" class="button button-balanced button-block">Submit</button>
+    <a ui-sref="welcome()" id="nonEmployeesReservation-button26" ng-click="launch_toast()" class="button button-dark button-block">back</a>
+  </ion-content>
+</ion-view>

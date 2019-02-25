@@ -1,0 +1,12 @@
+<ion-view title="Bigen date confirmation" hide-nav-bar="true" id="page9">
+  <ion-content padding="true" class="manual-ios-statusbar-padding">
+    <h1 id="bigenDateConfirmation-heading33" style="color:#000000;text-align:center;">Seats Available:</h1>
+    <h2 id="bigenDateConfirmation-heading31" style="color:#008000;text-align:center;">{{data.reserveSpot}}</h2>
+    <h1 id="bigenDateConfirmation-heading34" style="color:#000000;text-align:center;">Date:</h1>
+    <h2 id="bigenDateConfirmation-heading32" style="color:#008000;text-align:center;">{{data.today}} {{data.month}} {{data.time}}</h2>
+    <div class="spacer" style="width: 300px; height: 134px;"></div>
+    <a ui-sref="page10({&quot;reserveSpot&quot;:&quot;&quot;+data.reserveSpot+&quot;&quot;,&quot;time&quot;:&quot;&quot;+data.time+&quot;&quot;,&quot;month&quot;:&quot;&quot;+data.month+&quot;&quot;,&quot;today&quot;:&quot;&quot;+data.today+&quot;&quot;})"
+      id="bigenDateConfirmation-button42" class="button button-balanced button-block">Confirm</a>
+    <a ui-sref="bigenSubmitDates()" id="bigenDateConfirmation-button41" class="button button-dark button-block">Edit</a>
+  </ion-content>
+</ion-view>
